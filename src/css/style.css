@@ -13,6 +13,15 @@ nav{
     line-height: 60px;
     padding-left: 210px;
     float: left;
+    -webkit- animation: comming 2s ease;
+    -o- animation: comming 2s ease;
+    animation: comming 2s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
 }
 
 .menu{
@@ -27,12 +36,15 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
-    
+    -webkit- animation: topshift 0.4s ease forwards;
+    -o- animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
 }
 
@@ -41,9 +53,17 @@ nav{
     margin: 232px 0px 0px 204px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit- animation: titlemove 1s ease forwards;
+    -o- animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit- animation-delay: 2.4s;
+    -o- animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title_conteiner h1{
+    font-family: 'Ubuntu', sans-serif;
     font-size: 60px;
     font-weight: bold;
 }
@@ -78,6 +98,16 @@ nav{
 .about_me_container img{
     display: block;
     margin: 0 auto;
+    animation: show 1s;
+}
+
+@keyframes show {
+    from{
+        margin-left: -500px;
+    }
+    to{
+       margin-left: 0; 
+    }
 }
 .about_me_container{
     width: 740px;
@@ -239,7 +269,7 @@ nav{
 }
 
 .statistic{
-    background: url(../img/bg3.jpg) center/cover no-repeat;
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
 
 
@@ -468,4 +498,83 @@ nav{
     text-align: center;
     line-height: 94px;
     color: white;
+}
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: block;
+}
+
+.menu li a:hover{
+    color: #e88604;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+.menu li a:visited{
+    color: white;
+}
+
+.title_conteiner input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title_conteiner input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title_conteiner input:active{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-top: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 204px;
+    }
 }
