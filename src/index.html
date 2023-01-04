@@ -123,85 +123,105 @@
         </div>
     </section> 
      <section class="portfolio">
-       <div class="portfolio_container">
-        <h2>Кейсы</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, atque!</p>
-        <img src="img/photo.png" alt="">
-        <div class="description_left">
-            <h3>CLIENT:</h3>
-            <p>Какая-то компания</p>
-            <h4>WEBSITE:</h4>
-            <h5>https://google.com</h5>
-        </div>
-        
-        <div class="description_right">
-            <h4>Название проекта</h4>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas culpa quo placeat libero sint aliquam hic, dolore totam, voluptas eligendi, nihil ipsam modi, laudantium architecto atque id pariatur ipsum. Tempore.</h5>
-        </div>
-    </div>
-    </section>
-    <section class="calculator">
-        <div class="calculator_container">
-            <h2>Расчет стоимости</h2>
-            <h3>Тип Сайта</h3>
-            <select name="type" id="typeSite">
-                <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Сайт-визитка</option>
-                <option value="3">Корпоративный сайт</option>
-                <option value="4">Интернет-магазин</option>
-            </select> 
-            <h3>Дизайн</h3>
-            <select name="type" id="typeSite">
-                <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Шаблонный</option>
-                <option value="3">Уникальный</option>
-                <option value="4">WOW-Дизайн</option>
-            </select>
-            <h3>Адаптивность</h3>
-            <select name="type" id="typeSite">
-                <option value="1" selected disabled>Выберите пункт</option>
-                <option value="2">Только ПК</option>
-                <option value="3">Только мобильный сайт</option>
-                <option value="4">ПК + Мобильный</option>
-            </select>
-            <hr>
-            <div class="calculator_footer">
-                <div class="days">
-                    <p>Сроки</p>
-                    <p>0</p>
+            <div class="portfolio_container container">
+                <h2>Кейсы</h2>
+                <hr>
+                <p class="portfolio_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati consequuntur in pariatur!</p>
+                <img src="img/photo.png" alt="">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3 col-lg-2 description_left">
+                        <h3>Client:</h3>
+                        <p>Какая-то компания</p>
+                        <h3>Website:</h3>
+                        <p>https://somedomain.ru</p>
+                        <a href="#">Visit Live Site</a>
+                    </div>
+                    <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                        <h4>Название проекта</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                    </div>
                 </div>
-                 <div class="price">
-                    <p>Стоимость</p>
-                    <p>0</p>
+
+
+            </div>
+        </section>
+    
+        <section class="calculator">
+            <div class="calculator_container container">
+                <h2>Расчет стоимости</h2>
+                <div class="calculator_inner">
+                    <h3>Тип Сайта</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Сайт-визитка</option>
+                        <option value="3">Корпоративный сайт</option>
+                        <option value="4">Интернет-магазин</option>
+                    </select>
+                    <h3>Дизайн</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Шаблонный</option>
+                        <option value="3">Уникальный</option>
+                        <option value="4">WOW-Дизайн</option>
+                    </select>
+                    <h3>Адаптивность</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Только ПК</option>
+                        <option value="3">Только мобильный сайт</option>
+                        <option value="4">ПК + Мобильный</option>
+                    </select>
+                    <hr>
+                    <div class="calculator_footer">
+                        <div class="days">
+                            <p class="text">Сроки</p>
+                            <p class="digit">0</p>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="price">
+                            <p class="text">Стоимость</p>
+                            <p class="digit">0</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 ">
+                                <button class="mx-auto">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="statistic">
-        <div class="statistic_container">
-            <h2>Немного статистики</h2>
-            <div class="statistic_item">
-                <img src="img/logo1.png" alt="">
-                <h3>120</h3>
-                <p>Счастливых клиентов</p>
+        </section>
+   <section class="statistic">
+            <div class="statistic_container container">
+                <h2>Немного статистики</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item ">
+                        <img src="img/logo1.png" alt="">
+                        <h3>120</h3>
+                        <p>Счастливых клиентов</p>
+                    </div>
+                    <div class=" col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-sm-0">
+                        <img src="img/logo2.png" alt="">
+                        <h3>4600</h3>
+                        <p>Часов работы</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
+                        <img src="img/logo3.png" alt="">
+                        <h3>340</h3>
+                        <p>Проектов завершено</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
+                        <img src="img/logo4.png" alt="">
+                        <h3>23</h3>
+                        <p>Наград получено</p>
+                    </div>
+                </div>
             </div>
-            <div class="statistic_item">
-                <img src="img/logo2.png" alt="">
-                <h3>4600</h3>
-                <p>Часов работы</p>
-            </div>
-            <div class="statistic_item">
-                <img src="img/logo3.png" alt="">
-                <h3>340</h3>
-                <p>Проектов завершено</p>
-            </div>
-            <div class="statistic_item">
-                <img src="img/logo4.png" alt="">
-                <h3>23</h3>
-                <p>Наград получено</p>
-            </div>
-        </div>
-    </section>
+        </section>
     <section class="reviews">
         <div class="reviews_container">
             <h2>Отзывы</h2>
@@ -212,43 +232,66 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
-        <div class="contacts_container">
-            <h2>Мои Контакты</h2>
-            <div class="contacts_data">
-                <div class="contacts_data_item">
-                    <img src="img/geo.png" alt="">
-                    <p>Санкт-Петербург, Невский проспект 11</p>
+     <section class="contacts">
+            <div class="contacts_container container">
+                <h2>Мои Контакты</h2>
+                <hr>
+                <p class="contacts_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati!</p>
+                <div class="contacts_data row justify-content-center text-center">
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3">
+                        <img src="img/geo.png" alt="">
+                        <p>Санкт-Петербург <br> Невский проспект 11</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/mail.png" alt="">
+                        <p>info@mycompany.ru</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/tel.png" alt="">
+                        <p>+7 999-999-99-99</p>
+                    </div>
                 </div>
-                <div class="contacts_data_item">
-                    <img src="img/mail.png" alt="">
-                    <p>info@mycompany.ru</p>
-                </div>
-                <div class="contacts_data_item">
-                    <img src="img/tel.png" alt="">
-                    <p>+7 999-999-99-99</p>
+
+                <h3>Оставьте мне сообщение</h3>
+                <form action="#">
+                    <div class="contacts_inputs row justify-content-center text-center">
+                        <div class="col-12 col-sm-4 "><input type="text" placeholder="Имя"></div>
+                        <div class="col-12 col-sm-4 "><input class="secondInput " type="text" placeholder="Email"></div>
+
+
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-8">
+                            <textarea placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="contacts_social row row justify-content-center text-center">
+                   <div class="col-4 col-md-1 ">
+                   <a href="#"><img src="img/fb.png" alt=""></a>
+                   </div>
+                   <div class="col-4 col-md-1 ">
+                   <a href="#"><img src="img/tvit.png" alt=""></a>
+                   </div>
+                   <div class="col-4 col-md-1 ">
+                   <a href="#"><img src="img/bool.png" alt=""></a>
+                   </div>
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                       <a href="#"><img src="img/inst.png" alt=""></a>
+                   </div>
+                   <div class="col-4 col-md-1 mt-5 mt-md-0">
+                       <a href="#"><img src="img/kat.png" alt=""></a>
+                   </div>
+                    
+                   <div class="col-4 col-md-1 mt-5 mt-md-0">
+                       <a href="#"><img src="img/in.png" alt=""></a>
+                   </div>
+         
                 </div>
             </div>
-            <h3>Оставьте мне сообщение</h3>
-            <form action="#">
-                <div class="contacts_inputs">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Email">
-                </div>
-                <textarea name="message" id="messageText" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
-            </form>
-            <div class="contacts_social">
-                <a href="#"><img src="img/fb.png" alt=""></a>
-                <a href="#"><img src="img/tvit.png" alt=""></a>
-                <a href="#"><img src="img/bool.png" alt=""></a>
-                <a href="#"><img src="img/kat.png" alt=""></a>
-                <a href="#"><img src="img/inst.png" alt=""></a>
-                <a href="#"><img src="img/in.png" alt=""></a>
-            </div>
-        </div>
-    </section>
-    
+        </section>
     </main>
      <footer>
     <div class="map">
@@ -260,6 +303,7 @@
         </div>
     </div>
     </footer>
-   <script src="js/bootstrap.bundle.min.js"></script> 
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/calc.js"></script> 
 </body>
 </html>
