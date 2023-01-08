@@ -527,6 +527,11 @@ nav{
 .menu li a:active{
     transform: scale(1.1);
 }
+
+.menu li a:active{
+    color: red;
+}
+
 .menu li a:visited{
     color: white;
 }

@@ -58,13 +58,14 @@ design = prompt("Какой тип дизайна? 1 - Шаблон 2  - Уни�
         return;
     }
 adaptive = prompt("Какой тип адаптивности? 1 - Только ПК 2  - ПК + Мобильная");
-}
+
     if(adaptive != 1 && adaptive != 2 && adaptive != 3){
         alert("Такого варианта нет");
         getAnswers();
         return;
     }
-calculator.run(site, design, adaptive);
+    }
+
 
 getAnswers();
-
+calculator.run(site, design, adaptive);
