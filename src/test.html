@@ -55,19 +55,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel">Оставьте свои данные и менеджер <p class=>свяжется с вами</p></h1>
+        <h1 class="modal-title fs-5 d-block mx-auto" id="ModalLabel">Оставьте свои данные и менеджер <p class=>свяжется с вами</p></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="php/mail.php" method="post">
           <div class="mb-3">
-            <input type="name" required placeholder="Имя" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+            <input type="name" name="user_name" required placeholder="Имя" class="form-control" id="InputName1" aria-describedby="nameHelp">
           </div>
           <div class="mb-3">
-            <input type="email" required placeholder="Эл.адрес" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" name="user_email" required placeholder="Эл.адрес" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
-            <input type="tel" required class="form-control" id="inputTel">
+            <input type="phone" name="user_phone" required class="form-control" id="inputTel">
           </div>
           <div class="mb-3">
             <label>Оставляя Заявку, Вы принимаете условия Политики в отношении обработки персональных данных и Соглашение на обработку и хранение персональных данных</label>
@@ -166,7 +166,7 @@
   
 -->
  
-  <script scr="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/maskedinput.min.js"></script>
   <script src="js/myScript.js"></script> 
